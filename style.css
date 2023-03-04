@@ -1,0 +1,236 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Merriweather', serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+	#alarm_can{
+	  width: 80%;
+	  height: 60%;
+      background-color: red;
+	}
+}
+#main_canvas{
+	width: 100vw;
+	height: 100vh;
+	background-color: #84adea;
+	
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+}
+#alarm_can{
+	width: 40%;
+	height: 60%;
+	background-color: white;
+	box-shadow: 10px 10px 8px #888888;
+	/*border:2px solid red;*/
+}
+#clock_icon{
+	/*border:2px solid red;*/
+	width: 100%;
+	height: 30%;
+	display: flex;
+	justify-content: center;
+	padding: 0;
+}
+#clock_icon img{
+	width: 30%;
+	height: 100%;
+}
+#all_inputes{
+	/*border:2px solid red;*/
+	
+	height: 49%;
+	width: 100%;
+}
+#spans{
+	width: 100%;
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3rem;
+	color: #84adea;
+	/*border: 2px solid red;*/
+}
+#all_inputes #input{
+    display: flex;
+    width: 100%;
+	height: 50%;
+	justify-content: space-around;
+	align-items: center;
+}
+#all_inputes #input input{
+	/*padding-top: 20%;*/
+	height: 35%;
+	width: 30%;
+	border-radius: 5px;
+	border: 1px solid #84adea;
+
+}
+#all_inputes #input input:focus{
+	outline: none;
+}
+
+#btn{
+	display: flex;
+	justify-content: space-around;
+	/*align-items: center;*/
+	width: 100%;
+	height: 20%;
+	/*border: 2px solid red;*/
+}
+#btn #butn{
+	height: 45%;
+	width: 40%;
+	font-size: 1.25rem;
+	/*background-color:*/
+	border: none;
+	border-radius: 5px;
+	background-color: #84adea;
+	color: white; 
+}
+#btn #reset{
+	height: 45%;
+	width: 40%;
+	font-size: 1.25rem;
+	/*background-color:*/
+	border: none;
+	border-radius: 5px;
+	background-color: #84adea;
+	color: white;
+}
+a{
+	height: 45%;
+	width: 30%;
+	font-size: 1.25rem;
+	/*background-color:*/
+	border: none;
+	border-radius: 5px;
+	background-color: #84adea;
+	color: white;
+	/*text-align: center;*/
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*padding-top: 5px;*/
+}
+
+#second_main_canvas{
+	width: 100vw;
+	height: 100vh;
+	background-color: #84adea;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+#track{
+	display: flex;
+	width: 100%;
+	height: 50%;
+}
+#second_alarm_can{
+	width: 40%;
+	height: 60%;
+	background-color: white;
+	box-shadow: 10px 10px 8px #888888;
+	/*border:2px solid red;*/
+	/*display: flex;*/
+}
+#first2btn{
+	/*border:2px solid red;*/
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+}
+#last2btn{
+	/*border:2px solid red;*/
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+}
+.btn{
+    width:43%;
+    height:23%;
+    font-size: 1.15rem;
+	/*background-color:*/
+	border: none;
+	border-radius: 5px;
+	background-color: #84adea;
+	color: white;
+    /*background-color: black;*/
+}
+#select{
+	/*border:2px solid black;*/
+	width: 100%;
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#setAlarmTone{
+	 width:43%;
+    height:23%;
+    font-size: 1.15rem;
+	/*background-color:*/
+	border: none;
+	border-radius: 5px;
+	background-color: #84adea;
+	color: white;
+}	
+button{
+    cursor: pointer;
+}
+button:hover{
+	background-color: #5b96ef;
+	color: white;
+	font-size: 1.10rem;
+}
+
+#select button:hover{
+	background-color: #5b96ef;
+	color: white;
+	font-size: 1.10rem;
+}
+#btn #reset:hover{
+	background-color: #5b96ef;
+	color: white;
+	font-size: 1.20rem;
+}
+#btn #butn:hover{
+	background-color: #5b96ef;
+	color: white;
+	font-size: 1.20rem;
+}
+@media screen and (max-width: 450px){
+	#alarm_can{
+	  width: 90%;
+	  height: 55%;
+	}
+	#main_canvas{
+		flex-direction: column;
+		width: 100%;
+		padding-top: 30px;  
+		padding-bottom: 30px;  
+	}
+	#second_alarm_can{
+		width: 90%;
+	  height: 55%;
+	  margin-top: 20px;
+	}
+}
+		
+      

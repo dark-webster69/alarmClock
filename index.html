@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>M.Alarm_Clock</title>
+	<link rel="icon" type="image/x-icon" href="favicon-32x32.png">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="main_canvas">
+		<div id="alarm_can">
+			<div id="clock_icon"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnvS7rbVCVE9cbdYXxq7v7qsx1mlWXpBxv5A&usqp=CAU" alt=""></div>
+			<div id="all_inputes"><div id="spans"><span id="hour">00</span>:
+			<span id="minute">00</span>:
+			<span id="second">00</span></div>	<div id="input"><input id="hours"  min="0" type="number" class="inputes" placeholder="Hours">
+			<input id="minutes"  min="0" type="number" class="inputes" placeholder="Minutes">
+			<input id="seconds"  min="0" type="number" class="inputes" placeholder="Seconds"> </div></div>
+		<div id="btn">	<button onclick="setAlarm()" id="butn" value="0"> <b>Set Alarm</b></button>
+			<button onclick="resetAlarm()" id="reset"><b>Reset</b>
+			<!-- </button> <a href="Customization_Alarm_Clock.html"><b>customize</b></a> -->
+			</div>
+		</div>
+
+        
+	<!-- <div id="second_main_canvas"> -->
+		<div id="second_alarm_can">
+			<div id="track">
+			<div id="first2btn">
+			<button onclick="trackOne()" class="btn" id="track1"><b>Track1</b></button>
+			<button onclick="trackTwo()" class="btn" id="track2"><b>Track2</b></button>
+			</div>
+			<div id="last2btn">
+			<button onclick="trackThree()" class="btn" id="track3"><b>Track3</b></button>
+			<button onclick="trackFour()" class="btn" id="track4"><b>Track4</b></button>
+			</div>
+			</div>
+			<div id="select">
+				<button onclick="setAlarmnone()" id="setAlarmTone"><b>Set as Alarm Tone</b></button>
+			</div>
+		</div>
+	<!-- </div> -->
+
+	</div>
+
+	
+</body>
+<script type="text/javascript" src="logic.js"></script>
+</html>
+	
